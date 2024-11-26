@@ -117,6 +117,9 @@
             </div>
         </section>
     </div>
+
+    <!-- lagu -->
+     <audio src="MyLoveWestlife.mp3" id="lagu"></audio>
 </body>
 
 
@@ -124,10 +127,12 @@
     const tombolBuka = document.getElementById("tombolBukaUndangan");
     //console.log(tombolBuka);
     const isiUndangan = document.getElementById("isiUndangan");
+    const lagu = document.getElementById("lagu");
 
     tombolBuka.addEventListener("click", function() {
         //console.log("tombol terdeteksi");
         isiUndangan.classList.toggle("hidden");
+        lagu.play();
 
     })
 </script>
